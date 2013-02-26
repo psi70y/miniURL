@@ -26,6 +26,8 @@
 		7D1CAEA616DCEFBF0076F033 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1CAEA516DCEFBF0076F033 /* second@2x.png */; };
 		7D1CAEAE16DCF0710076F033 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7D1CAEAD16DCF0710076F033 /* Settings.bundle */; };
 		7D1CAEB016DCF52C0076F033 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D1CAEAF16DCF52C0076F033 /* Parse.framework */; };
+		7D1CAEB216DCF6670076F033 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1CAEB116DCF6670076F033 /* icon.png */; };
+		7D1CAEB416DCF66B0076F033 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1CAEB316DCF66B0076F033 /* icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		7D1CAEA516DCEFBF0076F033 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		7D1CAEAD16DCF0710076F033 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = ../Settings.bundle; sourceTree = "<group>"; };
 		7D1CAEAF16DCF52C0076F033 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../Parse.framework; sourceTree = "<group>"; };
+		7D1CAEB116DCF6670076F033 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		7D1CAEB316DCF66B0076F033 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,7 @@
 		7D1CAE8216DCEFBE0076F033 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7D1CAEB516DCF6730076F033 /* Images */,
 				7D1CAEAD16DCF0710076F033 /* Settings.bundle */,
 				7D1CAE8316DCEFBE0076F033 /* miniURL-Info.plist */,
 				7D1CAE8416DCEFBE0076F033 /* InfoPlist.strings */,
@@ -132,6 +137,15 @@
 				7D1CAE9116DCEFBF0076F033 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7D1CAEB516DCF6730076F033 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7D1CAEB316DCF66B0076F033 /* icon@2x.png */,
+				7D1CAEB116DCF6670076F033 /* icon.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +211,8 @@
 				7D1CAEA416DCEFBF0076F033 /* second.png in Resources */,
 				7D1CAEA616DCEFBF0076F033 /* second@2x.png in Resources */,
 				7D1CAEAE16DCF0710076F033 /* Settings.bundle in Resources */,
+				7D1CAEB216DCF6670076F033 /* icon.png in Resources */,
+				7D1CAEB416DCF66B0076F033 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +346,7 @@
 				INFOPLIST_FILE = "miniURL/miniURL-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -346,6 +363,7 @@
 				INFOPLIST_FILE = "miniURL/miniURL-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
